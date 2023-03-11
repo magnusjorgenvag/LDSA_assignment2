@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/3fb6ef16ac01433d8ac0f633befa228f/artifacts
+end_time: 1678542449150
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3fb6ef16ac01433d8ac0f633befa228f
+run_name: worried-asp-881
+run_uuid: 3fb6ef16ac01433d8ac0f633befa228f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678542429944
+status: 4
+tags: []
+user_id: Magnus
