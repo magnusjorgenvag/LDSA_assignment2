@@ -126,9 +126,10 @@ full_processor = Pipeline(steps=[
     ("scale", MinMaxScaler())
 ])
 
-#mlflow.set_tracking_uri('http://training.itu.dk:5000/')
+mlflow.set_tracking_uri('http://training.itu.dk:5000/')
 #experiment = mlflow.set_experiment("magnj - tracking")
 #mlflow run . --experiment_name="magnj - tracking" --tracking_uri="http://training.itu.dk:5000/"
+
 
 import mlflow.sklearn
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
@@ -144,32 +145,35 @@ def eval_metrics(actual, pred):
 
 
 degree = 4
-with mlflow.start_run():
-    poly = PolynomialFeatures(degree=degree, include_bias=False)
-    linReg = LinearRegression()
 
-    polynominal_pipeline = Pipeline(steps=[
-        ("preprocessor", full_processor),
-        ('polynominal', poly),
-        ('model', linReg)
-    ])
+with mlflow.set_experiment('magnj - tracking'):
+    with mlflow.start_run(run_name='tnet_e3nn_reg'):
+#with mlflow.start_run():
+        poly = PolynomialFeatures(degree=degree, include_bias=False)
+        linReg = LinearRegression()
 
-    # Parameters poly:'degree': 4, 'include_bias': False, 'interaction_only': False, 'order': 'C'
-    # Parameters linReg:'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False
+        polynominal_pipeline = Pipeline(steps=[
+            ("preprocessor", full_processor),
+            ('polynominal', poly),
+            ('model', linReg)
+        ])
 
-    # Estimate error for polynominal pipeline
-    poly_pipeline_model = polynominal_pipeline.fit(X_train, y_train)
-    poly_preds = poly_pipeline_model.predict(X_test)
-    (rmse, mae, r2) = eval_metrics(y_test, poly_preds)
+        # Parameters poly:'degree': 4, 'include_bias': False, 'interaction_only': False, 'order': 'C'
+        # Parameters linReg:'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False
 
-    print("Polynominal linear regression with degree: " + str(degree))
-    print("  RMSE: %s" % rmse)
-    print("  MAE: %s" % mae)
-    print("  R2: %s" % r2)
+        # Estimate error for polynominal pipeline
+        poly_pipeline_model = polynominal_pipeline.fit(X_train, y_train)
+        poly_preds = poly_pipeline_model.predict(X_test)
+        (rmse, mae, r2) = eval_metrics(y_test, poly_preds)
 
-    mlflow.log_param("degree", 4)
-    mlflow.log_metric("rmse", rmse)
-    mlflow.log_metric("r2", r2)
-    mlflow.log_metric("mae", mae)
+        print("Polynominal linear regression with degree: " + str(degree))
+        print("  RMSE: %s" % rmse)
+        print("  MAE: %s" % mae)
+        print("  R2: %s" % r2)
 
-    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+        mlflow.log_param("degree", 4)
+        mlflow.log_metric("rmse", rmse)
+        mlflow.log_metric("r2", r2)
+        mlflow.log_metric("mae", mae)
+
+        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
