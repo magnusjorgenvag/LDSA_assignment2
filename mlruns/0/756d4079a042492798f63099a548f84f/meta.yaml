@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/756d4079a042492798f63099a548f84f/artifacts
+end_time: 1678456424827
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 756d4079a042492798f63099a548f84f
+run_name: melodic-shrew-819
+run_uuid: 756d4079a042492798f63099a548f84f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678456424446
+status: 3
+tags: []
+user_id: Magnus

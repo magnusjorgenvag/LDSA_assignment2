@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/1b22ca528c40466c92b315db622a1874/artifacts
+end_time: 1678456332077
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1b22ca528c40466c92b315db622a1874
+run_name: capable-shad-883
+run_uuid: 1b22ca528c40466c92b315db622a1874
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678456331664
+status: 4
+tags: []
+user_id: Magnus

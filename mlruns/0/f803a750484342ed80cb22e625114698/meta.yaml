@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/f803a750484342ed80cb22e625114698/artifacts
+end_time: 1678456400837
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f803a750484342ed80cb22e625114698
+run_name: receptive-fly-915
+run_uuid: f803a750484342ed80cb22e625114698
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678456400461
+status: 4
+tags: []
+user_id: Magnus
