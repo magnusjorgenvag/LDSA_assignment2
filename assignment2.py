@@ -126,8 +126,8 @@ full_processor = Pipeline(steps=[
     ("scale", MinMaxScaler())
 ])
 
-#mlflow.set_tracking_uri('http://training.itu.dk:5000/')
-#experiment = mlflow.set_experiment("magnj - tracking")
+mlflow.set_tracking_uri('http://training.itu.dk:5000/')
+experiment = mlflow.set_experiment("magnj - tracking")
 
 import mlflow.sklearn
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
