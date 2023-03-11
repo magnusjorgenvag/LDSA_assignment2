@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/2b76a6e402424a0bb7b30dd967897b19/artifacts
+end_time: 1678541929794
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2b76a6e402424a0bb7b30dd967897b19
+run_name: learned-perch-288
+run_uuid: 2b76a6e402424a0bb7b30dd967897b19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678541806558
+status: 4
+tags: []
+user_id: Magnus
