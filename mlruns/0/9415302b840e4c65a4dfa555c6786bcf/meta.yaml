@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/9415302b840e4c65a4dfa555c6786bcf/artifacts
+end_time: 1678541198194
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9415302b840e4c65a4dfa555c6786bcf
+run_name: omniscient-koi-929
+run_uuid: 9415302b840e4c65a4dfa555c6786bcf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678541055452
+status: 4
+tags: []
+user_id: Magnus

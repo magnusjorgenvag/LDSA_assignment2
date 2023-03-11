@@ -8,4 +8,6 @@ dependencies:
   - python=3.10.9
   - pip:
     - mlflow
+    - influxdb
+    - pandas
     - matplotlib>3
