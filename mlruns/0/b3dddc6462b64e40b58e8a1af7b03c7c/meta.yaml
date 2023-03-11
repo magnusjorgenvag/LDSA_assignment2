@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/b3dddc6462b64e40b58e8a1af7b03c7c/artifacts
+end_time: 1678540559432
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b3dddc6462b64e40b58e8a1af7b03c7c
+run_name: debonair-hog-531
+run_uuid: b3dddc6462b64e40b58e8a1af7b03c7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678540544060
+status: 4
+tags: []
+user_id: Magnus

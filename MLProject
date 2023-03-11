@@ -1,0 +1,9 @@
+name: PolyReg
+
+conda_env: PolyReg.yaml
+
+entry_points:
+  main:
+    parameters:
+      num_samples: {type: int, default: 100}
+    command: "python assignment2.py {num_samples}"
