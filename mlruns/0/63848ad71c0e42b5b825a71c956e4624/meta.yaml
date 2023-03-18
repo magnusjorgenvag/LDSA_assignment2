@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/63848ad71c0e42b5b825a71c956e4624/artifacts
+end_time: 1679133332830
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 63848ad71c0e42b5b825a71c956e4624
+run_name: puzzled-goose-808
+run_uuid: 63848ad71c0e42b5b825a71c956e4624
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679133309889
+status: 4
+tags: []
+user_id: Magnus

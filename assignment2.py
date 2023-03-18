@@ -181,7 +181,7 @@ with mlflow.start_run():
     mlflow.log_metric("mae", mae)
 
     tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
-
+"""
     if tracking_url_type_store != "file":
         # Register the model
         # There are other ways to use the Model Registry, which depends on the use case,
@@ -190,3 +190,4 @@ with mlflow.start_run():
         mlflow.sklearn.log_model(poly_pipeline_model, "model", registered_model_name="Linear_poly_regression")
     else:
         mlflow.sklearn.log_model(poly_pipeline_model, "model")
+        """
