@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/2cbb86c0229b41f2a255de6172f5e208/artifacts
+end_time: 1678543380172
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2cbb86c0229b41f2a255de6172f5e208
+run_name: sassy-whale-713
+run_uuid: 2cbb86c0229b41f2a255de6172f5e208
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678543361306
+status: 4
+tags: []
+user_id: Magnus
