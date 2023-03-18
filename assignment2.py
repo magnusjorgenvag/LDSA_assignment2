@@ -126,8 +126,8 @@ full_processor = Pipeline(steps=[
     ("scale", MinMaxScaler())
 ])
 
-mlflow.set_tracking_uri('http://training.itu.dk:5000/')
-experiment = mlflow.set_experiment("magnj - tracking")
+#mlflow.set_tracking_uri('http://training.itu.dk:5000/')
+#experiment = mlflow.set_experiment("magnj - tracking")
 
 os.environ["MLFLOW_S3_ENDPOINT_URL"] = "http://130.226.140.28:5000"
 os.environ["AWS_ACCESS_KEY_ID"] = "training-bucket-access-key"

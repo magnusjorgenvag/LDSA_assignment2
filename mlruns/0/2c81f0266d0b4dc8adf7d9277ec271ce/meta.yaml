@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Magnus/PycharmProjects/LSDA_assignment2/mlruns/0/2c81f0266d0b4dc8adf7d9277ec271ce/artifacts
+end_time: 1679133602494
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2c81f0266d0b4dc8adf7d9277ec271ce
+run_name: dapper-wolf-946
+run_uuid: 2c81f0266d0b4dc8adf7d9277ec271ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679133580791
+status: 4
+tags: []
+user_id: Magnus
